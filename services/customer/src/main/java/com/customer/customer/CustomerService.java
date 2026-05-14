@@ -2,7 +2,6 @@ package com.customer.customer;
 
 import com.customer.exception.CustomerNotFoundException;
 import io.micrometer.common.util.StringUtils;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
