@@ -1,5 +1,5 @@
 mongodb:
-  uri: mongodb+srv://root:root@cluster0.je2w3p2.mongodb.net/customer?retryWrites=true&w=majority&appName=Cluster0
+  uri: 
 
 server:
   port: 8090
