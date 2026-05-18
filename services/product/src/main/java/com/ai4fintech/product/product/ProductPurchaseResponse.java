@@ -1,4 +1,17 @@
 package com.ai4fintech.product.product;
 
-public record ProductPurchaseResponse() {
+import java.math.BigDecimal;
+
+public record ProductPurchaseResponse(
+
+        Integer productId,
+
+        String name,
+
+        String description,
+
+        BigDecimal price,
+
+        double quantity
+) {
 }

@@ -1,5 +1,6 @@
 package com.ai4fintech.product.product;
 
+import com.ai4fintech.product.exception.ProductPurchaseException;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
