@@ -2,13 +2,19 @@ package com.order.order;
 
 import com.order.customer.CustomerClient;
 import com.order.excption.BusinessException;
+import com.order.kafka.OrderConfirmation;
+import com.order.kafka.OrderProducer;
 import com.order.orderline.OrderLineRequest;
 import com.order.orderline.OrderLineService;
 import com.order.product.ProductClient;
 import com.order.product.PurchaseRequest;
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
