@@ -1,6 +1,8 @@
 package com.payment.payment;
 
 
+import com.payment.notification.NotificationProducer;
+import com.payment.notification.PaymentNotificationRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,9 +15,9 @@ public class PaymentService {
     private final NotificationProducer notificationProducer;
 
     public Integer createPayment(PaymentRequest request) {
-        var payment = this.repository.save(this.mapper.toPayment(request));
+        var payment = this.repository.save(mapper.toPayment(request));
 
-        this.notificationProducer.sendNotification(
+        notificationProducer.sendNotification(
                 new PaymentNotificationRequest(
                         request.orderReference(),
                         request.amount(),

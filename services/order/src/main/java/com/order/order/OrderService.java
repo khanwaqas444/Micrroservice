@@ -6,6 +6,8 @@ import com.order.kafka.OrderConfirmation;
 import com.order.kafka.OrderProducer;
 import com.order.orderline.OrderLineRequest;
 import com.order.orderline.OrderLineService;
+import com.order.payment.PaymentClient;
+import com.order.payment.PaymentRequest;
 import com.order.product.ProductClient;
 import com.order.product.PurchaseRequest;
 import jakarta.persistence.EntityNotFoundException;
