@@ -1,14 +1,13 @@
 package com.notification.kafka.payment;
 
 import java.math.BigDecimal;
-import java.util.List;
 
-public record OrderConfirmation(
+public record PaymentConfirmation(
         String orderReference,
-        BigDecimal totalAmount,
+        BigDecimal amount,
         PaymentMethod paymentMethod,
-        Customer customer,
-        List<Product> products
-
+        String customerFirstname,
+        String customerLastname,
+        String customerEmail
 ) {
 }
